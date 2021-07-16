@@ -77,6 +77,6 @@ app.use("/", (req, res, next) => {
     status: `server running on port ${PORT}`,
   });
 });
-server.listen(4000 || process.env.PORT, () => {
+server.listen(process.env.PORT || 4000, () => {
   console.log(`Backend Sever Running on port ${PORT}`);
 });
