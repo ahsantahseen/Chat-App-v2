@@ -5,7 +5,6 @@
     "socket.io": "^4.1.3"
   },
   "name": "bolopakistan",
-  "version": "1.0.0 ",
   "description": "Simple chat app made in pakistan",
   "scripts": {
     "start":"node server.js",
