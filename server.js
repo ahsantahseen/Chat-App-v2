@@ -78,6 +78,6 @@ app.use("/", (req, res, next) => {
     status: `server running on port ${PORT}`,
   });
 });
-server.listen(PORT, () => {
+server.listen(process.env.PORT || PORT, () => {
   console.log(`Backend Sever Running on port ${PORT}`);
 });
