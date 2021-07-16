@@ -74,9 +74,9 @@ io.on("connection", (socket) => {
 app.use("/", (req, res, next) => {
   return res.json({
     message: "hello world",
-    status: `server running on port ${PORT}`,
+    status: `server running on port ${process.env.PORT || 4000}`,
   });
 });
 server.listen(process.env.PORT || 4000, () => {
-  console.log(`Backend Sever Running on port ${PORT}`);
+  console.log(`Backend Sever Running on port ${process.env.PORT || 4000}`);
 });
