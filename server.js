@@ -13,7 +13,6 @@ const {
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
-const PORT = 4000 || process.env.PORT;
 
 const botName = "Pak Bot";
 
@@ -78,6 +77,6 @@ app.use("/", (req, res, next) => {
     status: `server running on port ${PORT}`,
   });
 });
-server.listen(process.env.PORT || PORT, () => {
+server.listen(4000 || process.env.PORT, () => {
   console.log(`Backend Sever Running on port ${PORT}`);
 });
