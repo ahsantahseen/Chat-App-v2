@@ -1,6 +1,6 @@
 # Chat-App-v2
 
-Perfect for your disposible comunications.
+Perfect for your disposible communications.
 
 Developed using:
 
